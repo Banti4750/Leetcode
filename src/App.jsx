@@ -70,7 +70,7 @@ function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
 
 // Main Content component
 function MainContent({ isSidebarOpen }) {
-  const isMobile = useMediaQuery("(max-width: 400px)");
+  const isMobile = useMediaQuery("(max-width: 450px)");
   const [mobilesidebar, setmobilesidebar] = useState(false);
   const isDesktop = useMediaQuery("(min-width:760px)"); // Desktop breakpoint
 
