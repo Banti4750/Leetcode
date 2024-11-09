@@ -49,7 +49,7 @@ function App() {
 
 // Sidebar component
 function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
-  const isMobile = useMediaQuery("(max-width: 408px)");
+  const isMobile = useMediaQuery("(max-width: 550px)");
   if (isMobile && !isSidebarOpen) {
     return null;
   }
@@ -70,7 +70,7 @@ function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
 
 // Main Content component
 function MainContent({ isSidebarOpen }) {
-  const isMobile = useMediaQuery("(max-width: 450px)");
+  const isMobile = useMediaQuery("(max-width: 550px)");
   const [mobilesidebar, setmobilesidebar] = useState(false);
   const isDesktop = useMediaQuery("(min-width:760px)"); // Desktop breakpoint
 
